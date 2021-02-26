@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-23T07:38:26.276Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1182020,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Student should be able to Post with Id",
+        "description": "",
+        "id": "student-controller;student-should-be-able-to-post-with-id",
+        "after": [
+          {
+            "result": {
+              "duration": 60215,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "The user should be able to login as a student",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user post id 12",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The status code should be 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@student"
+          }
+        ]
+      }
+    ],
+    "name": "Student Controller",
+    "description": "",
+    "id": "student-controller",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apiFeatures/testCenterFeature/studentController.feature",
+    "tags": []
+  }
+]
