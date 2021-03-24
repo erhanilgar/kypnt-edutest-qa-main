@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/src/test/java/com/edutest/stepDefinitions/api/iamService/schoolAdminStepDef/SchoolAdminStepDef.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/resources/features/apiFeatures/testCenterFeature/studentController.feature">
           <value>
             <Attribute>

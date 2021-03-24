@@ -46,6 +46,8 @@ dependencies {
     compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
     compile 'org.seleniumhq.selenium:selenium-server:3.141.59'
     compile 'com.github.javafaker:javafaker:1.0.2'
+    compile 'mysql:mysql-connector-java:8.0.23'
+
 }
 cucumberReports {
     outputDir = file('target/generated/html')

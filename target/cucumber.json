@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T07:38:26.276Z",
+        "start_timestamp": "2021-03-23T22:19:12.955Z",
         "before": [
           {
             "result": {
-              "duration": 1182020,
+              "duration": 2512415,
               "status": "skipped"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "Student should be able to Post with Id",
+        "name": "Super admin able to create user roles",
         "description": "",
-        "id": "student-controller;student-should-be-able-to-post-with-id",
+        "id": "demo;super-admin-able-to-create-user-roles",
         "after": [
           {
             "result": {
-              "duration": 60215,
+              "duration": 51332,
               "status": "skipped"
             },
             "match": {
@@ -38,7 +38,7 @@
               "status": "undefined"
             },
             "line": 4,
-            "name": "The user should be able to login as a student",
+            "name": "Login as a \"super admin\"",
             "match": {},
             "keyword": "Given "
           },
@@ -47,7 +47,7 @@
               "status": "undefined"
             },
             "line": 5,
-            "name": "The user post id 12",
+            "name": "User click \"Moderator\" and \"Add Moderator\"",
             "match": {},
             "keyword": "When "
           },
@@ -56,23 +56,23 @@
               "status": "undefined"
             },
             "line": 6,
-            "name": "The status code should be 200",
+            "name": "Enter valid information and verify user created",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@student"
+            "name": "@demo"
           }
         ]
       }
     ],
-    "name": "Student Controller",
+    "name": "Demo",
     "description": "",
-    "id": "student-controller",
+    "id": "demo",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/apiFeatures/testCenterFeature/studentController.feature",
+    "uri": "file:src/test/resources/features/uiFeatures/Demo.feature",
     "tags": []
   }
 ]

@@ -69,6 +69,7 @@ public class Tokens {
 
         Response response =given().contentType(ContentType.JSON).and().body(credentials).post("IAM-SERVICE/api/auth/login");
 
+        System.out.println("response.jsonPath().getString(\"data.token\") = " + response.jsonPath().getString("data.token"));
         return response.jsonPath().getString("data.token");
     }
 

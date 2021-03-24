@@ -1,7 +1,10 @@
-package com.edutest.pages.api.testCenter;
+package com.edutest.stepDefinitions.api.iamService.studentControllerStepdef;
+
 
 
 import com.edutest.utilities.ConfigurationReader;
+
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,6 +28,7 @@ public class StudentContStepDef {
     String dbUrl ="jdbc:mysql://server.serra.pw:3306";
     String dbUsername="root";
     String dbPassword="1234";
+    Faker faker= new Faker();
 
 
     public StudentContStepDef() throws SQLException {
@@ -33,10 +37,11 @@ public class StudentContStepDef {
 
     @Given("The user should be able to login as a {string}")
     public void theUserShouldBeAbleToLoginAsA(String user) {
+
         if(user.equals("Student")){
             token="Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJTVFVERU5UIl0sInN1YiI6InN0dWRlbnRAZXhhbXBsZS5jb20iLCJpYXQiOjE2MTQwNzI3ODYsImV4cCI6MTYxNDI4ODc4Nn0.ayHqp8kKn2cHNFhVbG50XNGzZ0AHQnLWCdU8bETUaPE";
         }else if(user.equals("Super Admin")){
-            token="Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJTVVBFUl9BRE1JTiJdLCJzdWIiOiJzdXBlcmFkbWluQGV4YW1wbGUuY29tIiwiaWF0IjoxNjE0MTUxMDgzLCJleHAiOjE2MTQzNjcwODN9.QbTlcvRMALHc4FfctODhk_e4A-St3bC7lKG8erRbyYw";
+            token="Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJTVVBFUl9BRE1JTiJdLCJzdWIiOiJzdXBlcmFkbWluQGV4YW1wbGUuY29tIiwiaWF0IjoxNjE1MDY4NzIyLCJleHAiOjE2MTUyODQ3MjJ9.X3-FvTMZ-7XpXQIMZt_DbmefFJ2KwOBaKqhqWSp1bFM";
         }
 
     }
@@ -47,19 +52,12 @@ public class StudentContStepDef {
 
         response = given().accept(ContentType.JSON).header("Authorization",token).
                 and().pathParam("id", id)
-                .when().get(baseURI + "TEST-CENTRE-SERVICE/api/students/{id}");
+                .when().get(baseURI + "/api/students/{id}");
         response.prettyPrint();
 
     }
 
-    @Then("The status code should be {int}")
-    public void the_status_code_should_be(Integer statusCode) {
-        int expected= statusCode;
-        System.out.println("response.statusCode() = " + response.statusCode());
-        Assert.assertEquals(expected,response.statusCode());
 
-
-    }
     String apiFullName;
 
     @And("The users fullName should be {string}")
@@ -129,7 +127,7 @@ public class StudentContStepDef {
                 .header("Authorization",token)
                 .and()
                 .body(requestMap)
-                .when().put(baseURI + "TEST-CENTRE-SERVICE/api/students/29");
+                .when().put(baseURI + "/api/students/29");
 
         ResultSetMetaData rsMetaDat = resultSet.getMetaData();
         int colCount = rsMetaDat.getColumnCount();
@@ -153,10 +151,88 @@ public class StudentContStepDef {
 
         Assert.assertEquals(expectedFullName,dbFullName);
 
+    }
+    @When("The user delete id {int}")
+    public void theUserDeleteId(int id) {
+
+
+      response=   given().accept(ContentType.JSON).and().header("Authorization", token)
+                .when().delete(baseURI+"/api/students/" + id + "");
+    }
+    @Then("The status code should be {int}")
+    public void the_status_code_should_be(Integer statusCode) {
+        int expected= statusCode;
+        System.out.println("response.statusCode() = " + response.statusCode());
+        Assert.assertEquals(expected,response.statusCode());
 
 
     }
 
+    @When("When user gets school admins")
+    public void when_user_gets_school_admins() {
+
+        response= given().accept(ContentType.JSON).header("Authorization",token)
+                .when().get(baseURI + "/api/school-admin");
+        response.prettyPrint();
 
     }
+
+
+    @When("The user post user information")
+    public void theUserPostUserInformation() {
+        //"email": "string",
+        //  "firstName": "string",
+        //  "lastName": "string",
+        //  "mobile": "string",
+        //  "password": "string",
+        //  "schoolId": 0
+
+        Map<String,Object> requestMap = new HashMap<>();
+        requestMap.put("email",faker.internet().emailAddress());
+        requestMap.put("firstName",faker.name().firstName());
+        requestMap.put("lastName",faker.name().lastName());
+        requestMap.put("mobile","1234512345");
+        requestMap.put("password","Ghezzal12!");
+        requestMap.put("schoolId",300);
+
+      response=  given().accept(ContentType.JSON).and().header("Authorization",token)
+                .contentType(ContentType.JSON)
+                .and().body(requestMap)
+                .when().post(baseURI + "/api/school-admin");
+        System.out.println("id= " + response.path("data.id"));
+    }
+
+    @When("The user should be able to get request by id {int}")
+    public void theUserShouldBeAbleToGetRequestById(int id) {
+        response= given().accept(ContentType.JSON).pathParam("id",id).
+                and().header("Authorization",token)
+                .when().get(baseURI+"/api/school-admin/{id}");
+        response.prettyPrint();
+    }
+
+
+
+    @When("The user should be able to put by id {int}")
+    public void theUserShouldBeAbleToPutById(int id) {
+        Map<String,Object> putRequestMap = new HashMap<>();
+        putRequestMap.put("firstName","Michael");
+        putRequestMap.put("lastName","Sucumahir");
+        putRequestMap.put("mobile","1234567890");
+
+       response= given().accept(ContentType.JSON).and().pathParam("id",29)
+                .and().header("Authorization",token)
+                .and()
+                .body(putRequestMap)
+                .when().put(baseURI+"/api/school-admin/{id}");
+       response.prettyPrint();
+
+    }
+
+    @When("The user should be able to delete by id {int}")
+    public void theUserShouldBeAbleToDeleteById(int id) {
+     response=   given().pathParam("id",id)
+                .and().header("Authorization",token).when()
+                .delete(baseURI+"/api/school-admin/{id}");
+    }
+}
 

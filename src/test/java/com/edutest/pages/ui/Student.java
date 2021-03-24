@@ -45,7 +45,7 @@ public class Student {
     @FindBy(id = "district")
     private WebElement districtDropDown;
 
-    @FindBy(id = "school")
+    @FindBy(id = "schoolId")
     private WebElement schoolDropDown;
 
     @FindBy(xpath = "//input[@id='class']")
@@ -87,7 +87,7 @@ public class Student {
 
 
 
-   public  void navigateLandingPage(){
+   public  void  navigateLandingPage(){
         driver.get(ConfigurationReader.get("uiURL"));
    }
 

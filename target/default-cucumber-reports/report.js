@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/apiFeatures/testCenterFeature/studentController.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/uiFeatures/Demo.feature");
 formatter.feature({
-  "name": "Student Controller",
+  "name": "Demo",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Student should be able to Post with Id",
+  "name": "Super admin able to create user roles",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@student"
+      "name": "@demo"
     }
   ]
 });
@@ -18,7 +18,7 @@ formatter.before({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The user should be able to login as a student",
+  "name": "Login as a \"super admin\"",
   "keyword": "Given "
 });
 formatter.match({});
@@ -26,7 +26,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "The user post id 12",
+  "name": "User click \"Moderator\" and \"Add Moderator\"",
   "keyword": "When "
 });
 formatter.match({});
@@ -34,7 +34,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "The status code should be 200",
+  "name": "Enter valid information and verify user created",
   "keyword": "Then "
 });
 formatter.match({});

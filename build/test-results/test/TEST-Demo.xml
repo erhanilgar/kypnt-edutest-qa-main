@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Demo" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-03-23T22:19:12" hostname="Erhan-MacBook-Pro.local" time="0.142">
+  <properties/>
+  <testcase name="Super admin able to create user roles" classname="Demo" time="0.142">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[Feature: Demo
+
+  @demo
+  Scenario: Super admin able to create user roles        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:3?[0m
+    ?[33mGiven ?[0m?[33mLogin as a "super admin"?[0m                       ?[90m# null?[0m
+    ?[33mWhen ?[0m?[33mUser click "Moderator" and "Add Moderator"?[0m      ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mEnter valid information and verify user created?[0m ?[90m# null?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -24,7 +24,7 @@ public class Login {
     @FindBy(id = "password")
     private WebElement signInPasswordInput;
 
-    @FindBy(xpath = "(//span[text()=\"Login\"])[2]")
+    @FindBy(xpath = "//span[contains(text(),'Login')]")
     private WebElement loginButton;
 
     @FindBy(xpath = "//*[@id=\"notistack-snackbar\"]")
@@ -36,8 +36,13 @@ public class Login {
     @FindBy(xpath = "//*[text()=\"Sign out\"]")
     private WebElement signOutButton;
 
-    @FindBy(className = "css-1tclyyl")
-    private WebElement dontHaveAccountElement;
+
+
+    @FindBy(xpath = "//span[contains(text(),'Sign-in')]")
+    private WebElement signInButton;
+
+    @FindBy(xpath = "//span[contains(text(),'home')]")
+    private WebElement homeButton;
 
 
 
@@ -45,7 +50,7 @@ public class Login {
     public void enterInvalidCredentials(){
         String email="abc@ahjjkf.com";
         String password="abc123abc";
-
+        signInButton.click();
         signInEmailInput.sendKeys(email);
         signInPasswordInput.sendKeys(password);
         loginButton.click();
@@ -84,6 +89,7 @@ public class Login {
             System.out.println("Email or Password invalid");
         }
 
+        signInButton.click();
         signInEmailInput.sendKeys(email);
         //BrowserUtils.waitFor(3);
 
@@ -112,8 +118,8 @@ public class Login {
 
     public void verifySigedOutSuccessfully(){
 
-        String expectedText="Don’t have an account?Register";
-        String actualText= dontHaveAccountElement.getText();
+        String expectedText="HOME";
+        String actualText= homeButton.getText();
         Assert.assertEquals(expectedText,actualText);
     }
 
