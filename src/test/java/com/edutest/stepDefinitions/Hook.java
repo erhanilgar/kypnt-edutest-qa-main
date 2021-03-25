@@ -20,7 +20,7 @@ public class Hook {
         System.out.println("BEFORE");
 
         if(String.valueOf(scenario.getSourceTagNames()).contains("@web")){
-            Driver.get().get(ConfigurationReader.get("uiURL"));
+          //  Driver.get().get(ConfigurationReader.get("uiURL"));
             Driver.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             Driver.get().manage().window().maximize();
         }else if(String.valueOf(scenario.getSourceTagNames()).contains("@api")){
@@ -46,6 +46,7 @@ public class Hook {
         }else{
 
         }
+        Driver.closeDriver();
 
     }
 }

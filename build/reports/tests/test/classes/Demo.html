@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">14</div>
 <p>tests</p>
 </div>
 </td>
@@ -35,13 +35,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">1</div>
+<div class="counter">14</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.142s</div>
+<div class="counter">0.704s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,6 +78,71 @@
 </tr>
 </thead>
 <tr>
+<td class="skipped">As a user I should be login successfully</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">As a user I should be login successfully</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">As a user I should be login successfully</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">As a user I should be login successfully</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">As a user I should be login successfully</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Editor able to create question</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Moderator able to create exam types</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Moderator able to create exam types</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Moderator able to create exam types</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Moderator able to create topic</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Super admin able to create some roles</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Super admin able to create some roles</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="skipped">Super admin able to create user roles</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
 <td class="skipped">Super admin able to create user roles</td>
 <td class="skipped">-</td>
 <td class="skipped">ignored</td>
@@ -87,13 +152,192 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Feature: Demo
+<pre>@regressionSuite
+Feature: Demo
 
-  @demo
-  Scenario: Super admin able to create user roles        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:3?[0m
-    ?[33mGiven ?[0m?[33mLogin as a &quot;super admin&quot;?[0m                       ?[90m# null?[0m
-    ?[33mWhen ?[0m?[33mUser click &quot;Moderator&quot; and &quot;Add Moderator&quot;?[0m      ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mEnter valid information and verify user created?[0m ?[90m# null?[0m
+  @createUser @smoke
+  Scenario Outline: Super admin able to create user roles ?[90m# src/test/resources/features/uiFeatures/Demo.feature:8?[0m
+    ?[36mWhen Login as a &quot;superadmin&quot;?[0m
+    ?[36mAnd User click &quot;&lt;Role&gt;&quot; and &quot;&lt;Add Role&gt;&quot;?[0m
+    ?[36mThen Enter valid information and verify &quot;&lt;Role created&gt;&quot;?[0m
+
+    @createRole @smoke
+    Examples: 
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @createUser @smoke @createRole @smoke
+  Scenario Outline: Super admin able to create user roles       ?[90m# src/test/resources/features/uiFeatures/Demo.feature:15?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;superadmin&quot;?[0m                                ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Moderator&quot; and &quot;Add Moderator&quot;?[0m              ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mEnter valid information and verify &quot;Moderator created&quot;?[0m ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @createUser @smoke @createRole @smoke
+  Scenario Outline: Super admin able to create user roles    ?[90m# src/test/resources/features/uiFeatures/Demo.feature:16?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;superadmin&quot;?[0m                             ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Editor&quot; and &quot;Add Editor&quot;?[0m                 ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mEnter valid information and verify &quot;Editor created&quot;?[0m ?[90m# null?[0m
+
+  @create @smoke
+  Scenario Outline: Super admin able to create some roles ?[90m# src/test/resources/features/uiFeatures/Demo.feature:19?[0m
+    ?[36mWhen Login as a &quot;superadmin&quot;?[0m
+    ?[36mAnd User click &quot;&lt;Role&gt;&quot; and &quot;&lt;Add Role&gt;&quot;?[0m
+    ?[36mThen Enter information and verify &quot;&lt;Role created&gt;&quot;?[0m
+
+    Examples: 
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @create @smoke
+  Scenario Outline: Super admin able to create some roles ?[90m# src/test/resources/features/uiFeatures/Demo.feature:26?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;superadmin&quot;?[0m                          ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Teachers&quot; and &quot;Add Teacher&quot;?[0m           ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mEnter information and verify &quot;Teacher created&quot;?[0m   ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @create @smoke
+  Scenario Outline: Super admin able to create some roles    ?[90m# src/test/resources/features/uiFeatures/Demo.feature:27?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;superadmin&quot;?[0m                             ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;School Admin&quot; and &quot;Add School Admin&quot;?[0m     ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mEnter information and verify &quot;School admin created&quot;?[0m ?[90m# null?[0m
+
+  @examType @smoke
+  Scenario Outline: Moderator able to create exam types ?[90m# src/test/resources/features/uiFeatures/Demo.feature:30?[0m
+    ?[36mWhen Login as a &quot;moderator&quot;?[0m
+    ?[36mAnd User click &quot;&lt;Type&gt;&quot; and &quot;&lt;Add Type&gt;&quot;?[0m
+    ?[36mThen User enter information and click &quot;&lt;Language&gt;&quot; and verify &quot;&lt;verify message&gt;&quot;?[0m
+
+    Examples: 
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @examType @smoke
+  Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:37?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;moderator&quot;?[0m                                                ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Exam Types&quot; and &quot;Add Exam Type&quot;?[0m                            ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mUser enter information and click &quot;EN&quot; and verify &quot;Exam Type created!&quot;?[0m ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @examType @smoke
+  Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:38?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;moderator&quot;?[0m                                                ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Exam Types&quot; and &quot;Add Exam Type&quot;?[0m                            ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mUser enter information and click &quot;RU&quot; and verify &quot;Exam Type created!&quot;?[0m ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @examType @smoke
+  Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:39?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;moderator&quot;?[0m                                                ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Exam Types&quot; and &quot;Add Exam Type&quot;?[0m                            ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mUser enter information and click &quot;KZ&quot; and verify &quot;Exam Type created!&quot;?[0m ?[90m# null?[0m
+
+  @createTopic @smoke
+  Scenario Outline: Moderator able to create topic ?[90m# src/test/resources/features/uiFeatures/Demo.feature:42?[0m
+    ?[36mWhen Login as a &quot;moderator&quot;?[0m
+    ?[36mAnd User click &quot;Topic Setup&quot; and &quot;Add Subject&quot;?[0m
+    ?[36mThen User enter information and click &quot;&lt;Language&gt;&quot; and verify &quot;&lt;verify message&gt;&quot;?[0m
+    ?[36mAnd User able to create section under the subject?[0m
+    ?[36mAnd User able to add &quot;topic&quot; under the section and verify &quot;Created successfully&quot;?[0m
+
+    Examples: 
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @createTopic @smoke
+  Scenario Outline: Moderator able to create topic                                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:51?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;moderator&quot;?[0m                                                      ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Topic Setup&quot; and &quot;Add Subject&quot;?[0m                                   ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mUser enter information and click &quot;EN&quot; and verify &quot;Subject created&quot;?[0m          ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser able to create section under the subject?[0m                                ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser able to add &quot;topic&quot; under the section and verify &quot;Created successfully&quot;?[0m ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @createQuestion @smoke
+  Scenario: Editor able to create question                         ?[90m# src/test/resources/features/uiFeatures/Demo.feature:53?[0m
+    ?[33mWhen ?[0m?[33mLogin as a &quot;editor&quot;?[0m                                       ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser click &quot;Questions&quot; and &quot;Add Question&quot;?[0m                  ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser able to select topic &quot;Subject&quot; &quot;Section&quot; &quot;Topic&quot;?[0m      ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mUser able to select &quot;EN&quot; &quot;MULTI_SELECT&quot; and write question?[0m ?[90m# null?[0m
+
+  @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:61?[0m
+    ?[36mGiven navigate landing page?[0m
+    ?[36mWhen enter &quot;&lt;role&gt;&quot; credentials then click login?[0m
+    ?[36mThen verify Welcome &quot;&lt;message&gt;&quot;?[0m
+    ?[36mAnd click Sign out?[0m
+    ?[36mThen verify logged out successfuly?[0m
+
+    Examples: 
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:69?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
+    ?[33mWhen ?[0m?[33menter &quot;superadmin&quot; credentials then click login?[0m     ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify Welcome &quot;Super Admin&quot;?[0m                        ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:70?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
+    ?[33mWhen ?[0m?[33menter &quot;moderator&quot; credentials then click login?[0m      ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify Welcome &quot;Moderator&quot;?[0m                          ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:71?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
+    ?[33mWhen ?[0m?[33menter &quot;editor&quot; credentials then click login?[0m         ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify Welcome &quot;Editor&quot;?[0m                             ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:72?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
+    ?[33mWhen ?[0m?[33menter &quot;teacher&quot; credentials then click login?[0m        ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify Welcome &quot;Teacher&quot;?[0m                            ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:73?[0m
+    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
+    ?[33mWhen ?[0m?[33menter &quot;student&quot; credentials then click login?[0m        ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify Welcome &quot;Student&quot;?[0m                            ?[90m# null?[0m
+    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
+    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
 </pre>
 </span>
 </div>
@@ -105,7 +349,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 23 Mar 2021, 22:19:13</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 25 Mar 2021, 20:00:23</p>
 </div>
 </div>
 </body>

@@ -9,14 +9,14 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class SuperAdminPage {
-    WebDriver driver= Driver.get();
+
     public SuperAdminPage(){
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(Driver.get(),this);
     }
     @FindBy(xpath = "//span[contains(text(),'Moderators')]")
     public WebElement moderator;
 
-    @FindBy(xpath = "//div[@id='notistack-snackbar']")
+    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
     public WebElement verifyMessage;
 
     @FindBy(id = "email")
@@ -55,8 +55,11 @@ public class SuperAdminPage {
     @FindBy(xpath ="//li[@id='school-option-2']" )
     public WebElement school2;
 
+    @FindBy(xpath = "(//span[contains(text(),'Save')])[2]")
+    public WebElement save2;
+
 
     public void navigateMenu(String menuName){
-        driver.findElement(By.xpath("//span[contains(text(),'"+menuName+"')]")).click();
+        Driver.get().findElement(By.xpath("//span[contains(text(),'"+menuName+"')]")).click();
     }
 }

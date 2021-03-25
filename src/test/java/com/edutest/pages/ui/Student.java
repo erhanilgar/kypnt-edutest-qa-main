@@ -28,61 +28,61 @@ public class Student {
     public Student(){PageFactory.initElements(driver,this);}
 
     @FindBy(xpath = "//a[contains(text(),'Register')]")
-    private WebElement signUpButton;
+    public WebElement signUpButton;
 
     @FindBy(id="firstName")
-    private WebElement firstNameInput;
+    public WebElement firstNameInput;
 
     @FindBy(id="lastName")
-    private WebElement lastNameInput;
+    public WebElement lastNameInput;
 
     @FindBy(id = "region")
-    private WebElement regionDropDown;
+    public WebElement regionDropDown;
 
     @FindBy(xpath = "//*[@class=\"MuiAutocomplete-popper\"]")
-    private WebElement regionOptions;
+    public WebElement regionOptions;
 
     @FindBy(id = "district")
     private WebElement districtDropDown;
 
-    @FindBy(id = "schoolId")
-    private WebElement schoolDropDown;
+    @FindBy(id = "school")
+    public WebElement schoolDropDown;
 
-    @FindBy(xpath = "//input[@id='class']")
-    private WebElement classDropDown;
+    @FindBy(id = "grade")
+    public WebElement classDropDown;
 
     @FindBy(css = "#branch")
-    private WebElement branchDropDown;
+    public WebElement branchDropDown;
 
     @FindBy(id = "email")
-    private WebElement emailInput;
+    public WebElement emailInput;
 
-    @FindBy(id = "phone")
-    private WebElement phoneInput;
+    @FindBy(xpath = "//input[@id='mobile']")
+    public WebElement phoneInput;
 
     @FindBy(id = "password")
-    private WebElement passwordInput;
+    public WebElement passwordInput;
 
     @FindBy(id = "confirm")
-    private WebElement passwordConfirmInput;
+    public WebElement passwordConfirmInput;
 
     @FindBy(xpath = "//input[@name=\"agree\"]")
-    private WebElement agreeCheckBox;
-
-    @FindBy(xpath = "//span[text()=\"Register\"]")
-    private WebElement registerButton;
+    public WebElement agreeCheckBox;
 
     @FindBy(id = "email")
-    private WebElement signInEmailInput;
+    public WebElement signInEmailInput;
 
     @FindBy(id = "password")
-    private WebElement signInPasswordInput;
+    public WebElement signInPasswordInput;
 
-    @FindBy(xpath = "(//span[text()=\"Login\"])[2]")
-    private WebElement loginButton;
+    @FindBy(xpath = "//span[normalize-space()='Login']")
+    public WebElement loginButton;
 
     @FindBy(xpath = "//*[@class=\"css-calkr4\"]/div/div")
-    private WebElement welcomeText;
+    public WebElement welcomeText;
+
+    @FindBy(xpath = "//span[contains(text(),'Register')]")
+    public WebElement register;
 
 
 
@@ -200,10 +200,10 @@ public class Student {
        email=faker.internet().emailAddress();
        emailInput.sendKeys(email);
        BrowserUtils.waitFor(1);
-       phoneInput.sendKeys(faker.phoneNumber().phoneNumber());
+       phoneInput.sendKeys(faker.phoneNumber().subscriberNumber(10));
        BrowserUtils.waitFor(1);
 
-       password=faker.internet().password();
+       password="Test123456!";
 
        passwordInput.sendKeys(password);
        BrowserUtils.waitFor(2);
@@ -220,7 +220,7 @@ public class Student {
    }
 
    public void clickRegisterButton(){
-       registerButton.click();
+       register.click();
        BrowserUtils.waitFor(1);
    }
 

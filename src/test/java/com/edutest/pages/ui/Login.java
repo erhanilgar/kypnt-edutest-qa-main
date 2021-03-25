@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import sun.security.krb5.Config;
+
 
 public class Login {
 
@@ -19,30 +19,29 @@ public class Login {
     public Login(){ PageFactory.initElements(driver,this); }
 
     @FindBy(id = "email")
-    private WebElement signInEmailInput;
+    public WebElement signInEmailInput;
 
     @FindBy(id = "password")
-    private WebElement signInPasswordInput;
+    public WebElement signInPasswordInput;
 
     @FindBy(xpath = "//span[contains(text(),'Login')]")
-    private WebElement loginButton;
+    public WebElement loginButton;
 
-    @FindBy(xpath = "//*[@id=\"notistack-snackbar\"]")
-    private WebElement loginErrorMessage;
+    @FindBy(xpath = "//div[@id='notistack-snackbar']")
+    public WebElement loginErrorMessage;
 
     @FindBy(xpath = "//*[@class=\"css-calkr4\"]/div/div")
-    private WebElement welcomeText;
+    public WebElement welcomeText;
 
     @FindBy(xpath = "//*[text()=\"Sign out\"]")
-    private WebElement signOutButton;
-
+    public WebElement signOutButton;
 
 
     @FindBy(xpath = "//span[contains(text(),'Sign-in')]")
-    private WebElement signInButton;
+    public WebElement signInButton;
 
     @FindBy(xpath = "//span[contains(text(),'home')]")
-    private WebElement homeButton;
+    public WebElement homeButton;
 
 
 
@@ -78,7 +77,6 @@ public class Login {
             email= ConfigurationReader.get("superAdminEmail");
         }else if(role.equalsIgnoreCase("moderator")){
             email=ConfigurationReader.get("moderatorEmail");
-
         }else if (role.equalsIgnoreCase("editor")){
             email= ConfigurationReader.get("editorEmail");
         }else if (role.equalsIgnoreCase("teacher")){
@@ -90,13 +88,11 @@ public class Login {
         }
 
         signInButton.click();
+        BrowserUtils.waitFor(2);
         signInEmailInput.sendKeys(email);
-        //BrowserUtils.waitFor(3);
-
         signInPasswordInput.sendKeys(password);
-
         loginButton.click();
-        //BrowserUtils.waitFor(1);
+
 
 
     }

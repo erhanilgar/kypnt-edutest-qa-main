@@ -4,8 +4,8 @@ com/edutest/stepDefinitions/api/iamService/studentControllerStepdef/StudentContS
  com.edutest.stepDefinitions.api.iamService.studentControllerStepdef.StudentContStepDef
 com/edutest/stepDefinitions/api/testCenter/ExamTypeStepDef.java
  com.edutest.stepDefinitions.api.testCenter.ExamTypeStepDef
-com/edutest/pages/ui/Student.java
- com.edutest.pages.ui.Student
+com/edutest/pages/ui/ModeratorPage.java
+ com.edutest.pages.ui.ModeratorPage
 com/edutest/stepDefinitions/api/iamService/healthCheckStepDef/HealthStepDef.java
  com.edutest.stepDefinitions.api.iamService.healthCheckStepDef.HealthStepDef
 com/edutest/pages/api/testCenter/TestCenter.java
@@ -17,8 +17,8 @@ com/edutest/pages/ui/Lists.java
 com/edutest/utilities/BrowserUtils.java
  com.edutest.utilities.BrowserUtils
  com.edutest.utilities.BrowserUtils$1
-com/edutest/stepDefinitions/ui/StudentStepDef.java
- com.edutest.stepDefinitions.ui.StudentStepDef
+com/edutest/runner/CukesRunner.java
+ com.edutest.runner.CukesRunner
 com/edutest/utilities/Driver.java
  com.edutest.utilities.Driver
 com/edutest/pages/api/testCenter/Moderator.java
@@ -31,8 +31,8 @@ com/edutest/stepDefinitions/api/iamService/authControllerStepDef/SignUp.java
  com.edutest.stepDefinitions.api.iamService.authControllerStepDef.SignUp
 com/edutest/pages/ui/FrontEnd.java
  com.edutest.pages.ui.FrontEnd
-com/edutest/pages/ui/Login.java
- com.edutest.pages.ui.Login
+com/edutest/pages/ui/SuperAdminPage.java
+ com.edutest.pages.ui.SuperAdminPage
 com/edutest/stepDefinitions/api/iamService/userControllerStepDef/UserControllerStepDef.java
  com.edutest.stepDefinitions.api.iamService.userControllerStepDef.UserControllerStepDef
 com/edutest/pages/api/iamService/authController/Register.java
@@ -59,15 +59,17 @@ com/edutest/pages/api/testCenter/Editor.java
  com.edutest.pages.api.testCenter.Editor
 com/edutest/pages/api/testCenter/Bodies.java
  com.edutest.pages.api.testCenter.Bodies
+com/edutest/pages/ui/EditorPage.java
+ com.edutest.pages.ui.EditorPage
 com/edutest/stepDefinitions/Hook.java
  com.edutest.stepDefinitions.Hook
+com/edutest/pages/ui/Student.java
+ com.edutest.pages.ui.Student
 com/edutest/stepDefinitions/ui/LoginStepDef.java
  com.edutest.stepDefinitions.ui.LoginStepDef
-com/edutest/runner/CukesRunner.java
- com.edutest.runner.CukesRunner
-com/edutest/pages/ui/SuperAdminPage.java
- com.edutest.pages.ui.SuperAdminPage
-com/edutest/pages/ui/ModeratorPage.java
- com.edutest.pages.ui.ModeratorPage
+com/edutest/pages/ui/Login.java
+ com.edutest.pages.ui.Login
 com/edutest/stepDefinitions/ui/SuperAdminStepDef.java
  com.edutest.stepDefinitions.ui.SuperAdminStepDef
+com/edutest/stepDefinitions/ui/StudentStepDef.java
+ com.edutest.stepDefinitions.ui.StudentStepDef
