@@ -77,6 +77,7 @@ public class SuperAdminStepDef {
         spAdmin.saveButton.click();
         BrowserUtils.waitFor(2);
         String actualText= spAdmin.verifyMessage.getText();
+        System.out.println(actualText);
         Assert.assertEquals(expectedText,actualText);
     }
     String subject ="";
@@ -89,7 +90,7 @@ public class SuperAdminStepDef {
             examType= moderatorPage.getExamInfo();
             moderatorPage.clickChekBox(language);
             spAdmin.saveButton.click();
-            BrowserUtils.waitFor(1);
+            BrowserUtils.waitFor(2);
             System.out.println("exam type");
             String actualMessage= spAdmin.examVerify.getText();
             System.out.println("actualMessage = " + actualMessage);

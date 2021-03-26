@@ -18,12 +18,13 @@ public class Hook {
         System.out.println(scenario.getSourceTagNames());
         System.out.println(scenario.getName());
         System.out.println("BEFORE");
+        Driver.get().manage().window().maximize();
 
 
         if(String.valueOf(scenario.getSourceTagNames()).contains("@web")){
           //  Driver.get().get(ConfigurationReader.get("uiURL"));
             Driver.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-            Driver.get().manage().window().maximize();
+
 
         }else if(String.valueOf(scenario.getSourceTagNames()).contains("@api")){
             baseURI= ConfigurationReader.get("base_URI");
