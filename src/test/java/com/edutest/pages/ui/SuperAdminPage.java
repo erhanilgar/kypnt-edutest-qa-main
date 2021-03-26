@@ -10,13 +10,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SuperAdminPage {
 
+    WebDriver driver= Driver.get();
+
     public SuperAdminPage(){
         PageFactory.initElements(Driver.get(),this);
     }
     @FindBy(xpath = "//span[contains(text(),'Moderators')]")
     public WebElement moderator;
 
-    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
+    @FindBy(id = "notistack-snackbar")
     public WebElement verifyMessage;
 
     @FindBy(id = "email")
@@ -58,8 +60,11 @@ public class SuperAdminPage {
     @FindBy(xpath = "(//span[contains(text(),'Save')])[2]")
     public WebElement save2;
 
+    @FindBy(className = "Toastify__toast-body")
+    public WebElement examVerify;
+
 
     public void navigateMenu(String menuName){
-        Driver.get().findElement(By.xpath("//span[contains(text(),'"+menuName+"')]")).click();
+        driver.findElement(By.xpath("//span[contains(text(),'"+menuName+"')]")).click();
     }
 }

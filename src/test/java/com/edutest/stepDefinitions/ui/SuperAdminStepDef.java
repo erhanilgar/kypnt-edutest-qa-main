@@ -27,8 +27,8 @@ public class SuperAdminStepDef {
     @Given("Login as a {string}")
     public void login_as_a(String role) {
 
-        login.enterRoleCredentialsAndClickLogin(role);
-
+      //  login.enterRoleCredentialsAndClickLogin(role);
+          login.loginAs(role);
 
     }
 
@@ -53,8 +53,9 @@ public class SuperAdminStepDef {
         spAdmin.mobileInput.sendKeys(fk.number().digits(10));
         spAdmin.passwordInput.sendKeys(ConfigurationReader.get("commonPassword"));
         spAdmin.saveButton.click();
-
+        BrowserUtils.waitFor(1);
         String actualText= spAdmin.verifyMessage.getText();
+        System.out.println("actualText = " + actualText);
         Assert.assertEquals(expectedText,actualText);
 
     }
@@ -74,7 +75,7 @@ public class SuperAdminStepDef {
         spAdmin.mobileInput.sendKeys(fk.number().digits(10));
         spAdmin.passwordInput.sendKeys(ConfigurationReader.get("commonPassword"));
         spAdmin.saveButton.click();
-
+        BrowserUtils.waitFor(2);
         String actualText= spAdmin.verifyMessage.getText();
         Assert.assertEquals(expectedText,actualText);
     }
@@ -88,15 +89,16 @@ public class SuperAdminStepDef {
             examType= moderatorPage.getExamInfo();
             moderatorPage.clickChekBox(language);
             spAdmin.saveButton.click();
-            BrowserUtils.waitForVisibility(spAdmin.verifyMessage,5);
-            String actualMessage= spAdmin.verifyMessage.getText();
+            BrowserUtils.waitFor(1);
+            System.out.println("exam type");
+            String actualMessage= spAdmin.examVerify.getText();
             System.out.println("actualMessage = " + actualMessage);
             Assert.assertEquals(expectedMessage,actualMessage);
         }else {
             subject = moderatorPage.getSubjectInfo();
             spAdmin.saveButton.click();
             BrowserUtils.waitFor(2);
-            BrowserUtils.waitForVisibility(spAdmin.verifyMessage,5);
+            BrowserUtils.waitFor(2);
             String actualMessage= spAdmin.verifyMessage.getText();
             Assert.assertEquals(expectedMessage,actualMessage);
         }
@@ -129,7 +131,8 @@ public class SuperAdminStepDef {
         moderatorPage.getExamType("untEn");
         moderatorPage.getGrade();
         moderatorPage.getMonth("October");
-        moderatorPage.save2.click();
+        spAdmin.save2.click();
+        BrowserUtils.waitFor(2);
         String actualMessage= spAdmin.verifyMessage.getText();
         Assert.assertEquals(expectedMessage,actualMessage);
     }
@@ -161,4 +164,5 @@ public class SuperAdminStepDef {
 
 
     }
+
 }

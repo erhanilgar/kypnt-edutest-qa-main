@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports"
         },
         features = {"src/test/resources/features"},
-        glue = {"java/com/edutest/stepDefinitions"},
+        glue = {"com/edutest/stepDefinitions"},
         tags = {"@regressionSuite"},
-        dryRun = true
+        dryRun = false
 )
 public class CukesRunner {
 }

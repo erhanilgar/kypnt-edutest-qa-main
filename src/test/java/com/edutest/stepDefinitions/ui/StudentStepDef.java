@@ -26,6 +26,7 @@ public class StudentStepDef {
         BrowserUtils.waitForVisibility(student.register,5);
         BrowserUtils.clickWithJS(student.register);
 
+
     }
 
     @When("enter valid credentials")
@@ -44,8 +45,10 @@ public class StudentStepDef {
     public void click_register_button() {
 
         student.clickRegisterButton();
-        BrowserUtils.waitFor(7);
-        login.signInButton.click();
+      //  BrowserUtils.waitForClickablility(login.signInButton,15);
+        BrowserUtils.waitFor(5);
+        BrowserUtils.clickWithJS(login.signInButton);
+       // login.signInButton.click();
     }
 
     @Then("user enter credentials in login page")
@@ -64,6 +67,7 @@ public class StudentStepDef {
     public void verify_login_successful() {
 
         student.verifySuccessfulLogin();
+        BrowserUtils.waitFor(3);
     }
 
 

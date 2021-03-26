@@ -1,47 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Demo" tests="14" skipped="14" failures="0" errors="0" timestamp="2021-03-25T20:00:22" hostname="Erhan-MacBook-Pro.local" time="0.896">
+<testsuite name="Demo" tests="14" skipped="0" failures="6" errors="0" timestamp="2021-03-26T13:21:06" hostname="Erhan-MacBook-Pro.local" time="683.347">
   <properties/>
-  <testcase name="Super admin able to create user roles" classname="Demo" time="0.139">
-    <skipped/>
+  <testcase name="Super admin able to create user roles" classname="Demo" time="57.185"/>
+  <testcase name="Super admin able to create user roles" classname="Demo" time="44.655"/>
+  <testcase name="Super admin able to create some roles" classname="Demo" time="50.914"/>
+  <testcase name="Super admin able to create some roles" classname="Demo" time="52.126"/>
+  <testcase name="Moderator able to create exam types" classname="Demo" time="42.334"/>
+  <testcase name="Moderator able to create exam types" classname="Demo" time="43.844"/>
+  <testcase name="Moderator able to create exam types" classname="Demo" time="45.138">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[Exam Type created!]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Exam Type created!]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.edutest.stepDefinitions.ui.SuperAdminStepDef.userEnterInformationAndClickAndVerify(SuperAdminStepDef.java:96)
+	at ✽.User enter information and click &quot;KZ&quot; and verify &quot;Exam Type created!&quot;(file:src/test/resources/features/uiFeatures/Demo.feature:34)
+</failure>
   </testcase>
-  <testcase name="Super admin able to create user roles" classname="Demo" time="0.029">
-    <skipped/>
+  <testcase name="Moderator able to create topic" classname="Demo" time="75.974"/>
+  <testcase name="Editor able to create question" classname="Demo" time="87.976"/>
+  <testcase name="As a user I should be login successfully" classname="Demo" time="38.178">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=89.0.4389.90)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:60930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e7de889b5e93178db198678492469406" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:60930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e7de889b5e93178db198678492469406
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter &quot;superadmin&quot; credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+</failure>
   </testcase>
-  <testcase name="Super admin able to create some roles" classname="Demo" time="0.084">
-    <skipped/>
+  <testcase name="As a user I should be login successfully" classname="Demo" time="35.562">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=89.0.4389.90)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7485c3227b686017617e668faf9f54f3" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7485c3227b686017617e668faf9f54f3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter &quot;moderator&quot; credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+</failure>
   </testcase>
-  <testcase name="Super admin able to create some roles" classname="Demo" time="0.037">
-    <skipped/>
+  <testcase name="As a user I should be login successfully" classname="Demo" time="34.538">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=89.0.4389.90)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6fe5fd3ee16eb9369894907d405f48e5" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fe5fd3ee16eb9369894907d405f48e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter &quot;editor&quot; credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+</failure>
   </testcase>
-  <testcase name="Moderator able to create exam types" classname="Demo" time="0.034">
-    <skipped/>
+  <testcase name="As a user I should be login successfully" classname="Demo" time="37.364">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=89.0.4389.90)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 018b4a4d5511a0a2e3935cb4d791a124" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 018b4a4d5511a0a2e3935cb4d791a124
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter &quot;teacher&quot; credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+</failure>
   </testcase>
-  <testcase name="Moderator able to create exam types" classname="Demo" time="0.039">
-    <skipped/>
-  </testcase>
-  <testcase name="Moderator able to create exam types" classname="Demo" time="0.047">
-    <skipped/>
-  </testcase>
-  <testcase name="Moderator able to create topic" classname="Demo" time="0.093">
-    <skipped/>
-  </testcase>
-  <testcase name="Editor able to create question" classname="Demo" time="0.045">
-    <skipped/>
-  </testcase>
-  <testcase name="As a user I should be login successfully" classname="Demo" time="0.051">
-    <skipped/>
-  </testcase>
-  <testcase name="As a user I should be login successfully" classname="Demo" time="0.019">
-    <skipped/>
-  </testcase>
-  <testcase name="As a user I should be login successfully" classname="Demo" time="0.037">
-    <skipped/>
-  </testcase>
-  <testcase name="As a user I should be login successfully" classname="Demo" time="0.03">
-    <skipped/>
-  </testcase>
-  <testcase name="As a user I should be login successfully" classname="Demo" time="0.02">
-    <skipped/>
+  <testcase name="As a user I should be login successfully" classname="Demo" time="37.506">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=89.0.4389.90)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2181f9e622e7f43248ef543b614b49f" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1082, 50). Other element would receive the click: &lt;div class=&quot;MuiDialog-container MuiDialog-scrollPaper&quot; role=&quot;none presentation&quot; tabindex=&quot;-1&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2181f9e622e7f43248ef543b614b49f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter &quot;student&quot; credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+</failure>
   </testcase>
   <system-out><![CDATA[@regressionSuite
 Feature: Demo
@@ -52,26 +181,43 @@ Feature: Demo
     ?[36mAnd User click "<Role>" and "<Add Role>"?[0m
     ?[36mThen Enter valid information and verify "<Role created>"?[0m
 
-    @createRole @smoke
     Examples: 
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @createUser]
+Super admin able to create user roles
+BEFORE
+13:21:09.721 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:21:09.858 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:21:09.859 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:21:09.981 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:21:10.029 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
-  @regressionSuite @createUser @smoke @createRole @smoke
+  @regressionSuite @createUser @smoke
   Scenario Outline: Super admin able to create user roles       ?[90m# src/test/resources/features/uiFeatures/Demo.feature:15?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "superadmin"?[0m                                ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Moderator" and "Add Moderator"?[0m              ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mEnter valid information and verify "Moderator created"?[0m ?[90m# null?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"superadmin"?[0m                                ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Moderator"?[0m?[32m and ?[0m?[32m?[1m"Add Moderator"?[0m              ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+actualText = Moderator created
+    ?[32mThen ?[0m?[32mEnter valid information and verify ?[0m?[32m?[1m"Moderator created"?[0m ?[90m# SuperAdminStepDef.enterValidInformationAndVerify(String)?[0m
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @createUser]
+Super admin able to create user roles
+BEFORE
+13:22:03.750 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:22:03.758 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:22:03.761 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:22:03.776 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:22:03.781 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
-  @regressionSuite @createUser @smoke @createRole @smoke
+  @regressionSuite @createUser @smoke
   Scenario Outline: Super admin able to create user roles    ?[90m# src/test/resources/features/uiFeatures/Demo.feature:16?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "superadmin"?[0m                             ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Editor" and "Add Editor"?[0m                 ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mEnter valid information and verify "Editor created"?[0m ?[90m# null?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"superadmin"?[0m                             ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Editor"?[0m?[32m and ?[0m?[32m?[1m"Add Editor"?[0m                 ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+actualText = Editor created
+    ?[32mThen ?[0m?[32mEnter valid information and verify ?[0m?[32m?[1m"Editor created"?[0m ?[90m# SuperAdminStepDef.enterValidInformationAndVerify(String)?[0m
 
   @create @smoke
   Scenario Outline: Super admin able to create some roles ?[90m# src/test/resources/features/uiFeatures/Demo.feature:19?[0m
@@ -82,25 +228,41 @@ Feature: Demo
     Examples: 
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @create]
+Super admin able to create some roles
+BEFORE
+13:22:48.447 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:22:48.514 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:22:48.515 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:22:48.628 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:22:48.630 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @create @smoke
   Scenario Outline: Super admin able to create some roles ?[90m# src/test/resources/features/uiFeatures/Demo.feature:26?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "superadmin"?[0m                          ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Teachers" and "Add Teacher"?[0m           ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mEnter information and verify "Teacher created"?[0m   ?[90m# null?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"superadmin"?[0m                          ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Teachers"?[0m?[32m and ?[0m?[32m?[1m"Add Teacher"?[0m           ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+    ?[32mThen ?[0m?[32mEnter information and verify ?[0m?[32m?[1m"Teacher created"?[0m   ?[90m# SuperAdminStepDef.enterInformationAndVerify(String)?[0m
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @create]
+Super admin able to create some roles
+BEFORE
+13:23:39.163 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:23:39.173 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:23:39.174 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:23:39.451 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:23:39.454 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @create @smoke
   Scenario Outline: Super admin able to create some roles    ?[90m# src/test/resources/features/uiFeatures/Demo.feature:27?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "superadmin"?[0m                             ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "School Admin" and "Add School Admin"?[0m     ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mEnter information and verify "School admin created"?[0m ?[90m# null?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"superadmin"?[0m                             ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"School Admin"?[0m?[32m and ?[0m?[32m?[1m"Add School Admin"?[0m     ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+    ?[32mThen ?[0m?[32mEnter information and verify ?[0m?[32m?[1m"School Admin created"?[0m ?[90m# SuperAdminStepDef.enterInformationAndVerify(String)?[0m
 
   @examType @smoke
-  Scenario Outline: Moderator able to create exam types ?[90m# src/test/resources/features/uiFeatures/Demo.feature:30?[0m
+  Scenario Outline: Moderator able to create exam types ?[90m# src/test/resources/features/uiFeatures/Demo.feature:31?[0m
     ?[36mWhen Login as a "moderator"?[0m
     ?[36mAnd User click "<Type>" and "<Add Type>"?[0m
     ?[36mThen User enter information and click "<Language>" and verify "<verify message>"?[0m
@@ -108,65 +270,123 @@ Feature: Demo
     Examples: 
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
-
-  @regressionSuite @examType @smoke
-  Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:37?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "moderator"?[0m                                                ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Exam Types" and "Add Exam Type"?[0m                            ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mUser enter information and click "EN" and verify "Exam Type created!"?[0m ?[90m# null?[0m
-
-  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @examType]
+Moderator able to create exam types
+BEFORE
+13:24:31.359 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:24:31.366 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:24:31.368 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:24:31.520 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:24:31.531 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @examType @smoke
   Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:38?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "moderator"?[0m                                                ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Exam Types" and "Add Exam Type"?[0m                            ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mUser enter information and click "RU" and verify "Exam Type created!"?[0m ?[90m# null?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"moderator"?[0m                                                ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Exam Types"?[0m?[32m and ?[0m?[32m?[1m"Add Exam Type"?[0m                            ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+exam type
+actualMessage = Exam Type created!
+    ?[32mThen ?[0m?[32mUser enter information and click ?[0m?[32m?[1m"EN"?[0m?[32m and verify ?[0m?[32m?[1m"Exam Type created!"?[0m ?[90m# SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)?[0m
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @examType]
+Moderator able to create exam types
+BEFORE
+13:25:13.662 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:25:13.686 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:25:13.686 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:25:13.840 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:25:13.842 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @examType @smoke
   Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:39?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "moderator"?[0m                                                ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Exam Types" and "Add Exam Type"?[0m                            ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mUser enter information and click "KZ" and verify "Exam Type created!"?[0m ?[90m# null?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"moderator"?[0m                                                ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Exam Types"?[0m?[32m and ?[0m?[32m?[1m"Add Exam Type"?[0m                            ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+exam type
+actualMessage = Exam Type created!
+    ?[32mThen ?[0m?[32mUser enter information and click ?[0m?[32m?[1m"RU"?[0m?[32m and verify ?[0m?[32m?[1m"Exam Type created!"?[0m ?[90m# SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+[@smoke, @regressionSuite, @examType]
+Moderator able to create exam types
+BEFORE
+13:25:57.476 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:25:57.482 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:25:57.483 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:25:57.628 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:25:57.636 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
+
+  @regressionSuite @examType @smoke
+  Scenario Outline: Moderator able to create exam types                        ?[90m# src/test/resources/features/uiFeatures/Demo.feature:40?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"moderator"?[0m                                                ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Exam Types"?[0m?[32m and ?[0m?[32m?[1m"Add Exam Type"?[0m                            ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+exam type
+actualMessage = 
+    ?[31mThen ?[0m?[31mUser enter information and click ?[0m?[31m?[1m"KZ"?[0m?[31m and verify ?[0m?[31m?[1m"Exam Type created!"?[0m ?[90m# SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)?[0m
+      ?[31morg.junit.ComparisonFailure: expected:<[Exam Type created!]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.edutest.stepDefinitions.ui.SuperAdminStepDef.userEnterInformationAndClickAndVerify(SuperAdminStepDef.java:96)
+	at ✽.User enter information and click "KZ" and verify "Exam Type created!"(file:src/test/resources/features/uiFeatures/Demo.feature:34)
+?[0m
 
   @createTopic @smoke
-  Scenario Outline: Moderator able to create topic ?[90m# src/test/resources/features/uiFeatures/Demo.feature:42?[0m
+  Scenario Outline: Moderator able to create topic ?[90m# src/test/resources/features/uiFeatures/Demo.feature:43?[0m
     ?[36mWhen Login as a "moderator"?[0m
     ?[36mAnd User click "Topic Setup" and "Add Subject"?[0m
     ?[36mThen User enter information and click "<Language>" and verify "<verify message>"?[0m
     ?[36mAnd User able to create section under the subject?[0m
-    ?[36mAnd User able to add "topic" under the section and verify "Created successfully"?[0m
+    ?[36mAnd User able to add "topic" under the section and verify "Created Successfully"?[0m
 
     Examples: 
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @createTopic, @regressionSuite]
+Moderator able to create topic
+BEFORE
+13:26:42.842 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:26:42.845 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:26:42.845 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:26:42.872 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:26:42.874 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @createTopic @smoke
-  Scenario Outline: Moderator able to create topic                                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:51?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "moderator"?[0m                                                      ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Topic Setup" and "Add Subject"?[0m                                   ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mUser enter information and click "EN" and verify "Subject created"?[0m          ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser able to create section under the subject?[0m                                ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser able to add "topic" under the section and verify "Created successfully"?[0m ?[90m# null?[0m
+  Scenario Outline: Moderator able to create topic                                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:52?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"moderator"?[0m                                                      ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Topic Setup"?[0m?[32m and ?[0m?[32m?[1m"Add Subject"?[0m                                   ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+    ?[32mThen ?[0m?[32mUser enter information and click ?[0m?[32m?[1m"EN"?[0m?[32m and verify ?[0m?[32m?[1m"Subject created"?[0m          ?[90m# SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)?[0m
+    ?[32mAnd ?[0m?[32mUser able to create section under the subject?[0m                                ?[90m# SuperAdminStepDef.userAbleToCreateSectionUnderTheSubject()?[0m
+    ?[32mAnd ?[0m?[32mUser able to add ?[0m?[32m?[1m"topic"?[0m?[32m under the section and verify ?[0m?[32m?[1m"Created Successfully"?[0m ?[90m# SuperAdminStepDef.userAbleToAddUnderTheSectionAndVerify(String,String)?[0m
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@smoke, @regressionSuite, @createQuestion]
+Editor able to create question
+BEFORE
+13:27:58.654 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:27:58.671 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:27:58.673 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:27:58.803 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:27:58.812 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @createQuestion @smoke
-  Scenario: Editor able to create question                         ?[90m# src/test/resources/features/uiFeatures/Demo.feature:53?[0m
-    ?[33mWhen ?[0m?[33mLogin as a "editor"?[0m                                       ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser click "Questions" and "Add Question"?[0m                  ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser able to select topic "Subject" "Section" "Topic"?[0m      ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mUser able to select "EN" "MULTI_SELECT" and write question?[0m ?[90m# null?[0m
+  Scenario: Editor able to create question                         ?[90m# src/test/resources/features/uiFeatures/Demo.feature:55?[0m
+    ?[32mWhen ?[0m?[32mLogin as a ?[0m?[32m?[1m"editor"?[0m                                       ?[90m# SuperAdminStepDef.login_as_a(String)?[0m
+    ?[32mAnd ?[0m?[32mUser click ?[0m?[32m?[1m"Questions"?[0m?[32m and ?[0m?[32m?[1m"Add Question"?[0m                  ?[90m# SuperAdminStepDef.user_click_and(String,String)?[0m
+    ?[32mAnd ?[0m?[32mUser able to select topic ?[0m?[32m?[1m"Subject"?[0m?[32m ?[0m?[32m?[1m"Section"?[0m?[32m ?[0m?[32m?[1m"Topic"?[0m      ?[90m# SuperAdminStepDef.userAbleToSelectTopic(String,String,String)?[0m
+choice = G
+choice = H
+choice = A
+choice = E
+choice = G
+choice = G
+    ?[32mAnd ?[0m?[32mUser able to select ?[0m?[32m?[1m"EN"?[0m?[32m ?[0m?[32m?[1m"MULTI_SELECT"?[0m?[32m and write question?[0m ?[90m# SuperAdminStepDef.userAbleToSelectAndWriteQuestion(String,String)?[0m
 
   @login2
-  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:61?[0m
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:63?[0m
     ?[36mGiven navigate landing page?[0m
     ?[36mWhen enter "<role>" credentials then click login?[0m
     ?[36mThen verify Welcome "<message>"?[0m
@@ -176,59 +396,328 @@ Feature: Demo
     Examples: 
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
-
-  @regressionSuite @login2
-  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:69?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
-    ?[33mWhen ?[0m?[33menter "superadmin" credentials then click login?[0m     ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify Welcome "Super Admin"?[0m                        ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
-
-  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
-
-  @regressionSuite @login2
-  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:70?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
-    ?[33mWhen ?[0m?[33menter "moderator" credentials then click login?[0m      ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify Welcome "Moderator"?[0m                          ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
-
-  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@regressionSuite, @login2]
+As a user I should be login successfully
+BEFORE
+13:29:26.580 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:29:26.728 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:29:26.736 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:29:26.784 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:29:26.805 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @login2
   Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:71?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
-    ?[33mWhen ?[0m?[33menter "editor" credentials then click login?[0m         ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify Welcome "Editor"?[0m                             ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m                              ?[90m# StudentStepDef.navigate_landing_page()?[0m
+    ?[31mWhen ?[0m?[31menter ?[0m?[31m?[1m"superadmin"?[0m?[31m credentials then click login?[0m     ?[90m# LoginStepDef.enter_credentials_then_click_login(String)?[0m
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1082, 50). Other element would receive the click: <div class="MuiDialog-container MuiDialog-scrollPaper" role="none presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:60930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e7de889b5e93178db198678492469406
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter "superadmin" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+?[0m
+    ?[36mThen ?[0m?[36mverify Welcome ?[0m?[36m?[1m"Super Admin"?[0m                        ?[90m# LoginStepDef.verify_Welcome(String)?[0m
+    ?[36mAnd ?[0m?[36mclick Sign out?[0m                                       ?[90m# LoginStepDef.click_Sign_out()?[0m
+    ?[36mThen ?[0m?[36mverify logged out successfuly?[0m                       ?[90m# LoginStepDef.verify_logged_out_successfuly()?[0m
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@regressionSuite, @login2]
+As a user I should be login successfully
+BEFORE
+13:30:04.735 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:30:04.740 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:30:04.741 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:30:04.913 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:30:04.917 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @login2
   Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:72?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
-    ?[33mWhen ?[0m?[33menter "teacher" credentials then click login?[0m        ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify Welcome "Teacher"?[0m                            ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m                              ?[90m# StudentStepDef.navigate_landing_page()?[0m
+    ?[31mWhen ?[0m?[31menter ?[0m?[31m?[1m"moderator"?[0m?[31m credentials then click login?[0m      ?[90m# LoginStepDef.enter_credentials_then_click_login(String)?[0m
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1082, 50). Other element would receive the click: <div class="MuiDialog-container MuiDialog-scrollPaper" role="none presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7485c3227b686017617e668faf9f54f3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter "moderator" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+?[0m
+    ?[36mThen ?[0m?[36mverify Welcome ?[0m?[36m?[1m"Moderator"?[0m                          ?[90m# LoginStepDef.verify_Welcome(String)?[0m
+    ?[36mAnd ?[0m?[36mclick Sign out?[0m                                       ?[90m# LoginStepDef.click_Sign_out()?[0m
+    ?[36mThen ?[0m?[36mverify logged out successfuly?[0m                       ?[90m# LoginStepDef.verify_logged_out_successfuly()?[0m
 
   Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m ?[90m# null?[0m
+[@regressionSuite, @login2]
+As a user I should be login successfully
+BEFORE
+13:30:40.388 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:30:40.405 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:30:40.405 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:30:40.556 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:30:40.563 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
 
   @regressionSuite @login2
   Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:73?[0m
-    ?[33mGiven ?[0m?[33mnavigate landing page?[0m                              ?[90m# null?[0m
-    ?[33mWhen ?[0m?[33menter "student" credentials then click login?[0m        ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify Welcome "Student"?[0m                            ?[90m# null?[0m
-    ?[33mAnd ?[0m?[33mclick Sign out?[0m                                       ?[90m# null?[0m
-    ?[33mThen ?[0m?[33mverify logged out successfuly?[0m                       ?[90m# null?[0m
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m                              ?[90m# StudentStepDef.navigate_landing_page()?[0m
+    ?[31mWhen ?[0m?[31menter ?[0m?[31m?[1m"editor"?[0m?[31m credentials then click login?[0m         ?[90m# LoginStepDef.enter_credentials_then_click_login(String)?[0m
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1082, 50). Other element would receive the click: <div class="MuiDialog-container MuiDialog-scrollPaper" role="none presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fe5fd3ee16eb9369894907d405f48e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter "editor" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+?[0m
+    ?[36mThen ?[0m?[36mverify Welcome ?[0m?[36m?[1m"Editor"?[0m                             ?[90m# LoginStepDef.verify_Welcome(String)?[0m
+    ?[36mAnd ?[0m?[36mclick Sign out?[0m                                       ?[90m# LoginStepDef.click_Sign_out()?[0m
+    ?[36mThen ?[0m?[36mverify logged out successfuly?[0m                       ?[90m# LoginStepDef.verify_logged_out_successfuly()?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+[@regressionSuite, @login2]
+As a user I should be login successfully
+BEFORE
+13:31:14.839 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:31:14.846 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:31:14.847 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:31:14.868 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:31:14.872 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:74?[0m
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m                              ?[90m# StudentStepDef.navigate_landing_page()?[0m
+    ?[31mWhen ?[0m?[31menter ?[0m?[31m?[1m"teacher"?[0m?[31m credentials then click login?[0m        ?[90m# LoginStepDef.enter_credentials_then_click_login(String)?[0m
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1082, 50). Other element would receive the click: <div class="MuiDialog-container MuiDialog-scrollPaper" role="none presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 018b4a4d5511a0a2e3935cb4d791a124
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter "teacher" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+?[0m
+    ?[36mThen ?[0m?[36mverify Welcome ?[0m?[36m?[1m"Teacher"?[0m                            ?[90m# LoginStepDef.verify_Welcome(String)?[0m
+    ?[36mAnd ?[0m?[36mclick Sign out?[0m                                       ?[90m# LoginStepDef.click_Sign_out()?[0m
+    ?[36mThen ?[0m?[36mverify logged out successfuly?[0m                       ?[90m# LoginStepDef.verify_logged_out_successfuly()?[0m
+
+  Background:                   ?[90m# src/test/resources/features/uiFeatures/Demo.feature:4?[0m
+[@regressionSuite, @login2]
+As a user I should be login successfully
+BEFORE
+13:31:52.239 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=89 in cache (valid until 13:57:41 26/03/2021 GMT)
+13:31:52.242 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome89=89.0.4389.23 in cache (valid until 21:40:02 26/03/2021 GMT)
+13:31:52.242 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+13:31:52.259 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 89.0.4389.23 found in cache
+13:31:52.426 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/erhanilgar/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m ?[90m# StudentStepDef.navigate_landing_page()?[0m
+
+  @regressionSuite @login2
+  Scenario Outline: As a user I should be login successfully ?[90m# src/test/resources/features/uiFeatures/Demo.feature:75?[0m
+    ?[32mGiven ?[0m?[32mnavigate landing page?[0m                              ?[90m# StudentStepDef.navigate_landing_page()?[0m
+    ?[31mWhen ?[0m?[31menter ?[0m?[31m?[1m"student"?[0m?[31m credentials then click login?[0m        ?[90m# LoginStepDef.enter_credentials_then_click_login(String)?[0m
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1082, 50). Other element would receive the click: <div class="MuiDialog-container MuiDialog-scrollPaper" role="none presentation" tabindex="-1" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">...</div>
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Erhan-MacBook-Pro.local', ip: 'fe80:0:0:0:4ee:2e98:9ecf:c8b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2181f9e622e7f43248ef543b614b49f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)
+	at com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)
+	at ✽.enter "student" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)
+?[0m
+    ?[36mThen ?[0m?[36mverify Welcome ?[0m?[36m?[1m"Student"?[0m                            ?[90m# LoginStepDef.verify_Welcome(String)?[0m
+    ?[36mAnd ?[0m?[36mclick Sign out?[0m                                       ?[90m# LoginStepDef.click_Sign_out()?[0m
+    ?[36mThen ?[0m?[36mverify logged out successfuly?[0m                       ?[90m# LoginStepDef.verify_logged_out_successfuly()?[0m
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 34124
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:21:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 32195
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:22:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 1876
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:22:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 21599
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:23:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 36284
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:24:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 17912
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:25:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 41876
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:26:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 24179
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:26:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 45215
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:28:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 18407
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:29:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 13790
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:30:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 11492
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:30:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 44962
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:31:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 33285
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 26, 2021 1:31:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
 </testsuite>

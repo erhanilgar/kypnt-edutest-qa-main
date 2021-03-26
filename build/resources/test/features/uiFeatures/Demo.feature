@@ -24,7 +24,7 @@ Feature: Demo
     Examples:
       | Role         | Add Role         | Role created         |
       | Teachers     | Add Teacher      | Teacher created      |
-      | School Admin | Add School Admin | School admin created |
+      | School Admin | Add School Admin | School Admin created |
   #    | Salesman     | Add Salesman     | Salesman created     |
 
   @examType @smoke
@@ -45,7 +45,7 @@ Feature: Demo
     And User click "Topic Setup" and "Add Subject"
     Then User enter information and click "<Language>" and verify "<verify message>"
     And User able to create section under the subject
-    And User able to add "topic" under the section and verify "Created successfully"
+    And User able to add "topic" under the section and verify "Created Successfully"
 
     Examples:
       | Language | verify message  |

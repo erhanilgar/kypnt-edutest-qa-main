@@ -4,6 +4,7 @@ import com.edutest.utilities.BrowserUtils;
 import com.edutest.utilities.ConfigurationReader;
 import com.edutest.utilities.Driver;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -117,6 +118,42 @@ public class Login {
         String expectedText="HOME";
         String actualText= homeButton.getText();
         Assert.assertEquals(expectedText,actualText);
+    }
+    public void loginAs(String role){
+        String username;
+        String password = ConfigurationReader.get("commonPassword");
+        switch (role){
+            case "superadmin":
+                username = ConfigurationReader.get("superAdminEmail");
+                break;
+            case "moderator":
+                username = ConfigurationReader.get("moderatorEmail");
+                break;
+            case "editor":
+                username = ConfigurationReader.get("editorEmail");
+                break;
+            case "teacher":
+                username = ConfigurationReader.get("teacherEmail");
+                break;
+            case "salesman":
+                username = ConfigurationReader.get("salesmanEmail");
+                break;
+            case "schooladmin":
+                username = ConfigurationReader.get("schoolAdminEmail");
+                break;
+            case "expert":
+                username = ConfigurationReader.get("expert6Email");
+                break;
+
+            default:
+                username = "empty";
+        }
+        WebElement signinEmailInput = Driver.get().findElement(By.id("email"));
+        signinEmailInput.sendKeys(username);
+        WebElement signinPasswordInput = Driver.get().findElement(By.id("password"));
+        signinPasswordInput.sendKeys(password);
+        WebElement loginButton = Driver.get().findElement(By.xpath("//span[contains(text(),'Login')]"));
+        loginButton.click();
     }
 
 

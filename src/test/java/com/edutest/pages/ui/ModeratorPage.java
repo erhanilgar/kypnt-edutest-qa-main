@@ -1,5 +1,6 @@
 package com.edutest.pages.ui;
 
+import com.edutest.utilities.BrowserUtils;
 import com.edutest.utilities.Driver;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
@@ -11,10 +12,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.Random;
 
-public class ModeratorPage extends SuperAdminPage {
+public class ModeratorPage {
 
+    WebDriver driver = Driver.get();
     public ModeratorPage(){
-        PageFactory.initElements(Driver.get(),this);
+        PageFactory.initElements(driver,this);
     }
     Faker fk = new Faker();
     Random rn = new Random();
@@ -108,6 +110,7 @@ public class ModeratorPage extends SuperAdminPage {
         return section;
     }
     public WebElement getSection(String section){
+        BrowserUtils.waitFor(1);
     WebElement element=  Driver.get().findElement(By.xpath("(//span[@type='subject'])[2]"));
       return element;
     }

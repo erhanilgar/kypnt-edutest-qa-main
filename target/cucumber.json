@@ -11,49 +11,105 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 35347638912,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.019Z",
+        "start_timestamp": "2021-03-26T13:21:06.313Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3443645,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 15,
         "name": "Super admin able to create user roles",
         "description": "",
         "id": "demo;super-admin-able-to-create-user-roles;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 447864919,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 6773771845,
+              "status": "passed"
             },
             "line": 9,
             "name": "Login as a \"superadmin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"superadmin\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6643978390,
+              "status": "passed"
             },
             "line": 10,
             "name": "User click \"Moderator\" and \"Add Moderator\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Moderator\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Moderator\"",
+                  "offset": 27
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 7447602471,
+              "status": "passed"
             },
             "line": 11,
             "name": "Enter valid information and verify \"Moderator created\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Moderator created\"",
+                  "offset": 35
+                }
+              ],
+              "location": "SuperAdminStepDef.enterValidInformationAndVerify(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -63,12 +119,6 @@
           },
           {
             "name": "@createUser"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@createRole"
           },
           {
             "name": "@smoke"
@@ -84,49 +134,105 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 26216210969,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.207Z",
+        "start_timestamp": "2021-03-26T13:22:03.511Z",
+        "before": [
+          {
+            "result": {
+              "duration": 937412,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 16,
         "name": "Super admin able to create user roles",
         "description": "",
         "id": "demo;super-admin-able-to-create-user-roles;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 382821499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5105100166,
+              "status": "passed"
             },
             "line": 9,
             "name": "Login as a \"superadmin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"superadmin\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6353936521,
+              "status": "passed"
             },
             "line": 10,
             "name": "User click \"Editor\" and \"Add Editor\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Editor\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Editor\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6550711832,
+              "status": "passed"
             },
             "line": 11,
             "name": "Enter valid information and verify \"Editor created\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Editor created\"",
+                  "offset": 35
+                }
+              ],
+              "location": "SuperAdminStepDef.enterValidInformationAndVerify(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -139,12 +245,6 @@
           },
           {
             "name": "@smoke"
-          },
-          {
-            "name": "@createRole"
-          },
-          {
-            "name": "@smoke"
           }
         ]
       },
@@ -157,49 +257,105 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 26892587535,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.246Z",
+        "start_timestamp": "2021-03-26T13:22:48.171Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1305875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 26,
         "name": "Super admin able to create some roles",
         "description": "",
         "id": "demo;super-admin-able-to-create-some-roles;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 532725418,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 4485228953,
+              "status": "passed"
             },
             "line": 20,
             "name": "Login as a \"superadmin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"superadmin\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6672586099,
+              "status": "passed"
             },
             "line": 21,
             "name": "User click \"Teachers\" and \"Add Teacher\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Teachers\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Teacher\"",
+                  "offset": 26
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 12257860447,
+              "status": "passed"
             },
             "line": 22,
             "name": "Enter information and verify \"Teacher created\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Teacher created\"",
+                  "offset": 29
+                }
+              ],
+              "location": "SuperAdminStepDef.enterInformationAndVerify(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -224,49 +380,105 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 25665951487,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.338Z",
+        "start_timestamp": "2021-03-26T13:23:39.089Z",
+        "before": [
+          {
+            "result": {
+              "duration": 429425,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 27,
         "name": "Super admin able to create some roles",
         "description": "",
         "id": "demo;super-admin-able-to-create-some-roles;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 468218053,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5186279656,
+              "status": "passed"
             },
             "line": 20,
             "name": "Login as a \"superadmin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"superadmin\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6670615252,
+              "status": "passed"
             },
             "line": 21,
             "name": "User click \"School Admin\" and \"Add School Admin\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"School Admin\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add School Admin\"",
+                  "offset": 30
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 14076252603,
+              "status": "passed"
             },
             "line": 22,
-            "name": "Enter information and verify \"School admin created\"",
-            "match": {},
+            "name": "Enter information and verify \"School Admin created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"School Admin created\"",
+                  "offset": 29
+                }
+              ],
+              "location": "SuperAdminStepDef.enterInformationAndVerify(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -291,116 +503,109 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 24596492981,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.382Z",
-        "line": 37,
-        "name": "Moderator able to create exam types",
-        "description": "",
-        "id": "demo;moderator-able-to-create-exam-types;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+        "start_timestamp": "2021-03-26T13:24:31.218Z",
+        "before": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1030110,
+              "status": "passed"
             },
-            "line": 31,
-            "name": "Login as a \"moderator\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 32,
-            "name": "User click \"Exam Types\" and \"Add Exam Type\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 33,
-            "name": "User enter information and click \"EN\" and verify \"Exam Type created!\"",
-            "match": {},
-            "keyword": "Then "
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
           }
         ],
-        "tags": [
-          {
-            "name": "@regressionSuite"
-          },
-          {
-            "name": "@examType"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "navigate landing page",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-25T20:00:22.424Z",
         "line": 38,
         "name": "Moderator able to create exam types",
         "description": "",
-        "id": "demo;moderator-able-to-create-exam-types;;3",
+        "id": "demo;moderator-able-to-create-exam-types;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 348818660,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 4808518420,
+              "status": "passed"
             },
-            "line": 31,
+            "line": 32,
             "name": "Login as a \"moderator\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moderator\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6715570894,
+              "status": "passed"
             },
-            "line": 32,
+            "line": 33,
             "name": "User click \"Exam Types\" and \"Add Exam Type\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Exam Types\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Exam Type\"",
+                  "offset": 28
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5774723528,
+              "status": "passed"
             },
-            "line": 33,
-            "name": "User enter information and click \"RU\" and verify \"Exam Type created!\"",
-            "match": {},
+            "line": 34,
+            "name": "User enter information and click \"EN\" and verify \"Exam Type created!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Exam Type created!\"",
+                  "offset": 49
+                }
+              ],
+              "location": "SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -425,49 +630,109 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 26769355620,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.481Z",
+        "start_timestamp": "2021-03-26T13:25:13.556Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8813367,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 39,
         "name": "Moderator able to create exam types",
         "description": "",
-        "id": "demo;moderator-able-to-create-exam-types;;4",
+        "id": "demo;moderator-able-to-create-exam-types;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 419220819,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5041885394,
+              "status": "passed"
             },
-            "line": 31,
+            "line": 32,
             "name": "Login as a \"moderator\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moderator\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6363548007,
+              "status": "passed"
             },
-            "line": 32,
+            "line": 33,
             "name": "User click \"Exam Types\" and \"Add Exam Type\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Exam Types\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Exam Type\"",
+                  "offset": 28
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5202750770,
+              "status": "passed"
             },
-            "line": 33,
-            "name": "User enter information and click \"KZ\" and verify \"Exam Type created!\"",
-            "match": {},
+            "line": 34,
+            "name": "User enter information and click \"RU\" and verify \"Exam Type created!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RU\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Exam Type created!\"",
+                  "offset": 49
+                }
+              ],
+              "location": "SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -492,67 +757,271 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 25977067068,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.535Z",
-        "line": 51,
-        "name": "Moderator able to create topic",
+        "start_timestamp": "2021-03-26T13:25:57.403Z",
+        "before": [
+          {
+            "result": {
+              "duration": 684227,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Moderator able to create exam types",
         "description": "",
-        "id": "demo;moderator-able-to-create-topic;;2",
+        "id": "demo;moderator-able-to-create-exam-types;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 579685824,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5157755983,
+              "status": "passed"
             },
-            "line": 43,
+            "line": 32,
             "name": "Login as a \"moderator\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moderator\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6388456639,
+              "status": "passed"
             },
-            "line": 44,
-            "name": "User click \"Topic Setup\" and \"Add Subject\"",
-            "match": {},
+            "line": 33,
+            "name": "User click \"Exam Types\" and \"Add Exam Type\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Exam Types\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Exam Type\"",
+                  "offset": 28
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Exam Type created!]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat com.edutest.stepDefinitions.ui.SuperAdminStepDef.userEnterInformationAndClickAndVerify(SuperAdminStepDef.java:96)\n\tat ✽.User enter information and click \"KZ\" and verify \"Exam Type created!\"(file:src/test/resources/features/uiFeatures/Demo.feature:34)\n",
+              "duration": 6969071954,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "User enter information and click \"KZ\" and verify \"Exam Type created!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"KZ\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Exam Type created!\"",
+                  "offset": 49
+                }
+              ],
+              "location": "SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressionSuite"
+          },
+          {
+            "name": "@examType"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31162796450,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate landing page",
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T13:26:42.543Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1321787,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "Moderator able to create topic",
+        "description": "",
+        "id": "demo;moderator-able-to-create-topic;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 415230328,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3801596142,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Login as a \"moderator\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moderator\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6261189156,
+              "status": "passed"
             },
             "line": 45,
+            "name": "User click \"Topic Setup\" and \"Add Subject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Topic Setup\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Subject\"",
+                  "offset": 29
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6953203262,
+              "status": "passed"
+            },
+            "line": 46,
             "name": "User enter information and click \"EN\" and verify \"Subject created\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Subject created\"",
+                  "offset": 49
+                }
+              ],
+              "location": "SuperAdminStepDef.userEnterInformationAndClickAndVerify(String,String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 9602891915,
+              "status": "passed"
             },
-            "line": 46,
+            "line": 47,
             "name": "User able to create section under the subject",
-            "match": {},
+            "match": {
+              "location": "SuperAdminStepDef.userAbleToCreateSectionUnderTheSubject()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 17607143035,
+              "status": "passed"
             },
-            "line": 47,
-            "name": "User able to add \"topic\" under the section and verify \"Created successfully\"",
-            "match": {},
+            "line": 48,
+            "name": "User able to add \"topic\" under the section and verify \"Created Successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"topic\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Created Successfully\"",
+                  "offset": 54
+                }
+              ],
+              "location": "SuperAdminStepDef.userAbleToAddUnderTheSectionAndVerify(String,String)"
+            },
             "keyword": "And "
           }
         ],
@@ -577,58 +1046,135 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 29558282155,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.640Z",
-        "line": 53,
+        "start_timestamp": "2021-03-26T13:27:58.523Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2378695,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 55,
         "name": "Editor able to create question",
         "description": "",
         "id": "demo;editor-able-to-create-question",
+        "after": [
+          {
+            "result": {
+              "duration": 811874822,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5407995331,
+              "status": "passed"
             },
-            "line": 54,
+            "line": 56,
             "name": "Login as a \"editor\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"editor\"",
+                  "offset": 11
+                }
+              ],
+              "location": "SuperAdminStepDef.login_as_a(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 55,
-            "name": "User click \"Questions\" and \"Add Question\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 56,
-            "name": "User able to select topic \"Subject\" \"Section\" \"Topic\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+              "duration": 6489672196,
+              "status": "passed"
             },
             "line": 57,
+            "name": "User click \"Questions\" and \"Add Question\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Questions\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Add Question\"",
+                  "offset": 27
+                }
+              ],
+              "location": "SuperAdminStepDef.user_click_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5760783277,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User able to select topic \"Subject\" \"Section\" \"Topic\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Subject\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Section\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Topic\"",
+                  "offset": 46
+                }
+              ],
+              "location": "SuperAdminStepDef.userAbleToSelectTopic(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39886942910,
+              "status": "passed"
+            },
+            "line": 59,
             "name": "User able to select \"EN\" \"MULTI_SELECT\" and write question",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"MULTI_SELECT\"",
+                  "offset": 25
+                }
+              ],
+              "location": "SuperAdminStepDef.userAbleToSelectAndWriteQuestion(String,String)"
+            },
             "keyword": "And "
           }
         ],
@@ -653,231 +1199,120 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 25351017239,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.702Z",
-        "line": 69,
-        "name": "As a user I should be login successfully",
-        "description": "",
-        "id": "demo;as-a-user-i-should-be-login-successfully;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+        "start_timestamp": "2021-03-26T13:29:26.501Z",
+        "before": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 820037,
+              "status": "passed"
             },
-            "line": 62,
-            "name": "navigate landing page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 63,
-            "name": "enter \"superadmin\" credentials then click login",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 64,
-            "name": "verify Welcome \"Super Admin\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 65,
-            "name": "click Sign out",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 66,
-            "name": "verify logged out successfuly",
-            "match": {},
-            "keyword": "Then "
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
           }
         ],
-        "tags": [
-          {
-            "name": "@regressionSuite"
-          },
-          {
-            "name": "@login2"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "navigate landing page",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-25T20:00:22.761Z",
-        "line": 70,
-        "name": "As a user I should be login successfully",
-        "description": "",
-        "id": "demo;as-a-user-i-should-be-login-successfully;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 62,
-            "name": "navigate landing page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 63,
-            "name": "enter \"moderator\" credentials then click login",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 64,
-            "name": "verify Welcome \"Moderator\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 65,
-            "name": "click Sign out",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 66,
-            "name": "verify logged out successfuly",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regressionSuite"
-          },
-          {
-            "name": "@login2"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "navigate landing page",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-25T20:00:22.815Z",
         "line": 71,
         "name": "As a user I should be login successfully",
         "description": "",
-        "id": "demo;as-a-user-i-should-be-login-successfully;;4",
+        "id": "demo;as-a-user-i-should-be-login-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 838231763,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 10119600672,
+              "status": "passed"
             },
-            "line": 62,
+            "line": 64,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"MuiButton-label\"\u003e...\u003c/span\u003e is not clickable at point (1082, 50). Other element would receive the click: \u003cdiv class\u003d\"MuiDialog-container MuiDialog-scrollPaper\" role\u003d\"none presentation\" tabindex\u003d\"-1\" style\u003d\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d89.0.4389.90)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Erhan-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:4ee:2e98:9ecf:c8b%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:60930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e7de889b5e93178db198678492469406\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\n\tat com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)\n\tat com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)\n\tat ✽.enter \"superadmin\" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)\n",
+              "duration": 1798729710,
+              "status": "failed"
             },
-            "line": 63,
-            "name": "enter \"editor\" credentials then click login",
-            "match": {},
+            "line": 65,
+            "name": "enter \"superadmin\" credentials then click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"superadmin\"",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStepDef.enter_credentials_then_click_login(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 986646,
+              "status": "skipped"
             },
-            "line": 64,
-            "name": "verify Welcome \"Editor\"",
-            "match": {},
+            "line": 66,
+            "name": "verify Welcome \"Super Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super Admin\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDef.verify_Welcome(String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 954318,
+              "status": "skipped"
             },
-            "line": 65,
+            "line": 67,
             "name": "click Sign out",
-            "match": {},
+            "match": {
+              "location": "LoginStepDef.click_Sign_out()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 729011,
+              "status": "skipped"
             },
-            "line": 66,
+            "line": 68,
             "name": "verify logged out successfuly",
-            "match": {},
+            "match": {
+              "location": "LoginStepDef.verify_logged_out_successfuly()"
+            },
             "keyword": "Then "
           }
         ],
@@ -899,67 +1334,120 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 22714317392,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.858Z",
+        "start_timestamp": "2021-03-26T13:30:04.684Z",
+        "before": [
+          {
+            "result": {
+              "duration": 634975,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 72,
         "name": "As a user I should be login successfully",
         "description": "",
-        "id": "demo;as-a-user-i-should-be-login-successfully;;5",
+        "id": "demo;as-a-user-i-should-be-login-successfully;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 658799111,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 10127173179,
+              "status": "passed"
             },
-            "line": 62,
+            "line": 64,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"MuiButton-label\"\u003e...\u003c/span\u003e is not clickable at point (1082, 50). Other element would receive the click: \u003cdiv class\u003d\"MuiDialog-container MuiDialog-scrollPaper\" role\u003d\"none presentation\" tabindex\u003d\"-1\" style\u003d\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d89.0.4389.90)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Erhan-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:4ee:2e98:9ecf:c8b%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7485c3227b686017617e668faf9f54f3\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\n\tat com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)\n\tat com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)\n\tat ✽.enter \"moderator\" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)\n",
+              "duration": 2012755756,
+              "status": "failed"
             },
-            "line": 63,
-            "name": "enter \"teacher\" credentials then click login",
-            "match": {},
+            "line": 65,
+            "name": "enter \"moderator\" credentials then click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moderator\"",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStepDef.enter_credentials_then_click_login(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 980212,
+              "status": "skipped"
             },
-            "line": 64,
-            "name": "verify Welcome \"Teacher\"",
-            "match": {},
+            "line": 66,
+            "name": "verify Welcome \"Moderator\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Moderator\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDef.verify_Welcome(String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 934758,
+              "status": "skipped"
             },
-            "line": 65,
+            "line": 67,
             "name": "click Sign out",
-            "match": {},
+            "match": {
+              "location": "LoginStepDef.click_Sign_out()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1092231,
+              "status": "skipped"
             },
-            "line": 66,
+            "line": 68,
             "name": "verify logged out successfuly",
-            "match": {},
+            "match": {
+              "location": "LoginStepDef.verify_logged_out_successfuly()"
+            },
             "keyword": "Then "
           }
         ],
@@ -981,67 +1469,390 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 23182772265,
+              "status": "passed"
             },
             "line": 5,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-25T20:00:22.898Z",
+        "start_timestamp": "2021-03-26T13:30:40.251Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2735156,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
         "line": 73,
         "name": "As a user I should be login successfully",
         "description": "",
-        "id": "demo;as-a-user-i-should-be-login-successfully;;6",
+        "id": "demo;as-a-user-i-should-be-login-successfully;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 454348658,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 9284437538,
+              "status": "passed"
             },
-            "line": 62,
+            "line": 64,
             "name": "navigate landing page",
-            "match": {},
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"MuiButton-label\"\u003e...\u003c/span\u003e is not clickable at point (1082, 50). Other element would receive the click: \u003cdiv class\u003d\"MuiDialog-container MuiDialog-scrollPaper\" role\u003d\"none presentation\" tabindex\u003d\"-1\" style\u003d\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d89.0.4389.90)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Erhan-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:4ee:2e98:9ecf:c8b%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6fe5fd3ee16eb9369894907d405f48e5\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\n\tat com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)\n\tat com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)\n\tat ✽.enter \"editor\" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)\n",
+              "duration": 1573198863,
+              "status": "failed"
             },
-            "line": 63,
-            "name": "enter \"student\" credentials then click login",
-            "match": {},
+            "line": 65,
+            "name": "enter \"editor\" credentials then click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"editor\"",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStepDef.enter_credentials_then_click_login(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 811944,
+              "status": "skipped"
             },
-            "line": 64,
-            "name": "verify Welcome \"Student\"",
-            "match": {},
+            "line": 66,
+            "name": "verify Welcome \"Editor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Editor\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDef.verify_Welcome(String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 701410,
+              "status": "skipped"
             },
-            "line": 65,
+            "line": 67,
             "name": "click Sign out",
-            "match": {},
+            "match": {
+              "location": "LoginStepDef.click_Sign_out()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 892256,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "verify logged out successfuly",
+            "match": {
+              "location": "LoginStepDef.verify_logged_out_successfuly()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressionSuite"
+          },
+          {
+            "name": "@login2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24010601596,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate landing page",
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T13:31:14.789Z",
+        "before": [
+          {
+            "result": {
+              "duration": 423285,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 74,
+        "name": "As a user I should be login successfully",
+        "description": "",
+        "id": "demo;as-a-user-i-should-be-login-successfully;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 481529150,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11055364753,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "navigate landing page",
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"MuiButton-label\"\u003e...\u003c/span\u003e is not clickable at point (1082, 50). Other element would receive the click: \u003cdiv class\u003d\"MuiDialog-container MuiDialog-scrollPaper\" role\u003d\"none presentation\" tabindex\u003d\"-1\" style\u003d\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d89.0.4389.90)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Erhan-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:4ee:2e98:9ecf:c8b%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 018b4a4d5511a0a2e3935cb4d791a124\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\n\tat com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)\n\tat com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)\n\tat ✽.enter \"teacher\" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)\n",
+              "duration": 1754815913,
+              "status": "failed"
+            },
+            "line": 65,
+            "name": "enter \"teacher\" credentials then click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teacher\"",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStepDef.enter_credentials_then_click_login(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1582824,
+              "status": "skipped"
             },
             "line": 66,
+            "name": "verify Welcome \"Teacher\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Teacher\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDef.verify_Welcome(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 764467,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "click Sign out",
+            "match": {
+              "location": "LoginStepDef.click_Sign_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2766528,
+              "status": "skipped"
+            },
+            "line": 68,
             "name": "verify logged out successfuly",
-            "match": {},
+            "match": {
+              "location": "LoginStepDef.verify_logged_out_successfuly()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressionSuite"
+          },
+          {
+            "name": "@login2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24919495044,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate landing page",
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T13:31:52.161Z",
+        "before": [
+          {
+            "result": {
+              "duration": 458156,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 75,
+        "name": "As a user I should be login successfully",
+        "description": "",
+        "id": "demo;as-a-user-i-should-be-login-successfully;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 634052871,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9817800372,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "navigate landing page",
+            "match": {
+              "location": "StudentStepDef.navigate_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"MuiButton-label\"\u003e...\u003c/span\u003e is not clickable at point (1082, 50). Other element would receive the click: \u003cdiv class\u003d\"MuiDialog-container MuiDialog-scrollPaper\" role\u003d\"none presentation\" tabindex\u003d\"-1\" style\u003d\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d89.0.4389.90)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Erhan-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:4ee:2e98:9ecf:c8b%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/lc/wf9jqgv92pd...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2181f9e622e7f43248ef543b614b49f\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\n\tat com.edutest.pages.ui.Login.enterRoleCredentialsAndClickLogin(Login.java:91)\n\tat com.edutest.stepDefinitions.ui.LoginStepDef.enter_credentials_then_click_login(LoginStepDef.java:23)\n\tat ✽.enter \"student\" credentials then click login(file:src/test/resources/features/uiFeatures/Demo.feature:65)\n",
+              "duration": 2091942017,
+              "status": "failed"
+            },
+            "line": 65,
+            "name": "enter \"student\" credentials then click login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student\"",
+                  "offset": 6
+                }
+              ],
+              "location": "LoginStepDef.enter_credentials_then_click_login(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 833423,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "verify Welcome \"Student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Student\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDef.verify_Welcome(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 957189,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "click Sign out",
+            "match": {
+              "location": "LoginStepDef.click_Sign_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1050868,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "verify logged out successfuly",
+            "match": {
+              "location": "LoginStepDef.verify_logged_out_successfuly()"
+            },
             "keyword": "Then "
           }
         ],

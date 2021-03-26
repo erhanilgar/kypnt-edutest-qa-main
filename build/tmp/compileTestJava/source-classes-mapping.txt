@@ -17,8 +17,8 @@ com/edutest/pages/ui/Lists.java
 com/edutest/utilities/BrowserUtils.java
  com.edutest.utilities.BrowserUtils
  com.edutest.utilities.BrowserUtils$1
-com/edutest/runner/CukesRunner.java
- com.edutest.runner.CukesRunner
+com/edutest/stepDefinitions/ui/SuperAdminStepDef.java
+ com.edutest.stepDefinitions.ui.SuperAdminStepDef
 com/edutest/utilities/Driver.java
  com.edutest.utilities.Driver
 com/edutest/pages/api/testCenter/Moderator.java
@@ -69,7 +69,7 @@ com/edutest/stepDefinitions/ui/LoginStepDef.java
  com.edutest.stepDefinitions.ui.LoginStepDef
 com/edutest/pages/ui/Login.java
  com.edutest.pages.ui.Login
-com/edutest/stepDefinitions/ui/SuperAdminStepDef.java
- com.edutest.stepDefinitions.ui.SuperAdminStepDef
 com/edutest/stepDefinitions/ui/StudentStepDef.java
  com.edutest.stepDefinitions.ui.StudentStepDef
+com/edutest/runner/CukesRunner.java
+ com.edutest.runner.CukesRunner
